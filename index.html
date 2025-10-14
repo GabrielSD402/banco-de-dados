@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Entrada e Saída - 5 CTA</title>
+  <link rel="stylesheet" href="Entrada.css">
+</head>
+<body>
+
+  <header class="header-text">
+    <h2>5º Centro de Telemática de Área</h2>
+  </header>
+
+  <div class="Imagem-Principal">
+    <img src="5CTALogo.png" alt="Logo de fundo">
+  </div>
+
+  <div class="Bluebox">
+    <div class="Caixas">
+      <h2>Controle de Entrada e Saída do 5 CTA</h2>
+
+      <form id="controleForm">
+        <label for="nome">Nome (Guerra):</label>
+        <input type="text" id="nome" placeholder="Escreva aqui..." required>
+
+        <label for="OM">OM:</label>
+        <input type="text" id="OM" placeholder="Escreva aqui..." required>
+
+        <label for="IDT">IDT ou CPF:</label>
+        <input type="text" id="IDT" placeholder="Escreva aqui..." required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" placeholder="Escreva aqui..." required>
+
+        <label for="responsavel">Responsável:</label>
+        <input type="text" id="responsavel" placeholder="Escreva aqui..." required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" required>
+
+        <label for="horaEntrada">Horário de Entrada:</label>
+        <input type="time" id="horaEntrada" required>
+
+        <label for="horaSaida">Horário de Saída:</label>
+        <input type="time" id="horaSaida" required>
+
+        <label for="destino">Destino:</label>
+        <select id="destino" required>
+          <option value="" disabled selected>Selecione...</option>
+          <option value="chefe">Chefe</option>
+          <option value="subchefia">Subchefia</option>
+          <option value="informatica">Informática</option>
+          <option value="radio">Estação de Rádio</option>
+          <option value="divop">DIV OP</option>
+          <option value="contigente">Contigente</option>
+          <option value="divap">DIV AP</option>
+          <option value="comsoc">COM SOC</option>
+          <option value="ordenanca">Ordenança</option>
+          <option value="copa">COPA</option>
+          <option value="po">P.O.</option>
+          <option value="divadm">DIV ADM</option>
+          <option value="divadm">Alojamento</option>
+          <option value="divadm">ALMOX</option>
+          <option value="divadm">Reserva de materiais</option>
+        </select>
+
+        <label for="observacao">Observação:</label>
+        <textarea id="observacao" placeholder="Digite aqui suas observações..." rows="4"></textarea>
+
+        <button type="button" id="salvarBtn">SALVAR</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="Entrada.js"></script>
+</body>
+</html>

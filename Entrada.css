@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+/* Header */
+.header-text {
+  background-color: #083666;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+/* Imagem principal */
+.Imagem-Principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.Imagem-Principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(px) brightness(0.8);
+  transition: filter 0.5s ease;
+}
+
+.Imagem-Principal img:hover {
+  filter: blur(0) brightness(1);
+}
+
+/* Caixa azul */
+.Bluebox {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  background-color: #083666;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 5px 10px rgba(4,4,51,0.7);
+}
+
+/* Conteúdo das caixas */
+.Caixas h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+button#salvarBtn {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #0a47a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button#salvarBtn:hover {
+  background-color: #062e6c;
+}
